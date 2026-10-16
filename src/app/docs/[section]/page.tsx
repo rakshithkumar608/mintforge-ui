@@ -5,7 +5,10 @@ import Link from "next/link";
 import { Layers } from "lucide-react";
 
 export function generateStaticParams() {
-  return [];
+  return [
+    { section: "blocks" },
+    { section: "templates" },
+  ];
 }
 
 export default async function DynamicSectionDocPage({
